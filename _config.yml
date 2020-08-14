@@ -1,6 +1,11 @@
 title: Tailwind Jekyll Starter Kit
 description: A starter kit for using Tailwind with Jekyll
 
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
 exclude:
   - Gemfile
   - Gemfile.lock
