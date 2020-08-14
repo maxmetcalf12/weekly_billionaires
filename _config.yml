@@ -13,3 +13,8 @@ exclude:
   - src
   - tailwind.config.js
   - netlify.toml
+
+
+collections:
+  authors:
+    output: true
