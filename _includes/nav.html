@@ -1,7 +1,16 @@
-<nav>
-  {% for item in site.data.nav %}
-    <a href="{{ item.link }}" {% if page.url == item.link %}class="text-red-400"{% endif %}>
-      {{ item.name }}
+<nav class="flex bg-gray-800 text-gray-200 justify-center items-center px-4 py-2">
+  <div class="flex justify-center max-w-xl w-full">
+    <a href="/" class="flex text-xl sm:text-lg items-center py-1 px-4 hover:bg-gray-700 cursor-pointer">
+      <span class="text-3xl sm:text-2xl sm:mr-2">🏠</span>
+      <span class="hidden sm:inline">Home</span>
     </a>
-  {% endfor %}
+    <a href="/blog/" class="flex text-xl sm:text-lg items-center py-1 px-4 hover:bg-gray-700 cursor-pointer">
+      <span class="text-3xl sm:text-2xl sm:mr-2">📚</span>
+      <span class="hidden sm:inline">Blog</span>
+    </a>
+    <a href="/about/" class="flex text-xl sm:text-lg items-center py-1 px-4 hover:bg-gray-700 cursor-pointer">
+      <span class="text-3xl sm:text-2xl sm:mr-2">🧐</span>
+      <span class="hidden sm:inline">About us</span>
+    </a>
+  </div>
 </nav>

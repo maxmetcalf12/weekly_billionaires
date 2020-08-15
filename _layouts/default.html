@@ -2,8 +2,11 @@
 <html>
   {% include head.html %}
 
-  <body>
-    {% include nav.html %} 
-    {{ content }}
+  <body class="font-mono bg-gray-50 min-h-screen flex flex-col">
+    {% include nav.html %}
+    <div class="max-w-2xl mx-auto flex-grow">
+      {{ content }}
+    </div>
+    {% include footer.html %}
   </body>
 </html>
