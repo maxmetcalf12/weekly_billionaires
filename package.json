@@ -4,7 +4,10 @@
   "description": "A starter kit for using Tailwind with Jekyll",
   "main": "gulpfile.babel.js",
   "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
     "autoprefixer": "9.8.6",
+    "babel-loader": "^8.1.0",
     "babel-preset-env": "1.7.0",
     "babel-register": "6.26.0",
     "browser-sync": "2.26.12",
@@ -14,7 +17,9 @@
     "gulp": "4.0.2",
     "gulp-postcss": "8.0.0",
     "postcss-import": "12.0.1",
-    "tailwindcss": "^1.6.2"
+    "tailwindcss": "^1.6.2",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
   },
   "scripts": {
     "build:production": "cross-env NODE_ENV=production gulp",
@@ -36,6 +41,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@tailwindcss/ui": "^0.5.0"
+    "@tailwindcss/ui": "^0.5.0",
+    "alpinejs": "^2.6.0"
   }
 }
