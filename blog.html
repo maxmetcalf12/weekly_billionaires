@@ -2,8 +2,8 @@
 title: Blog
 ---
 
-<div class="relative pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
-  <div class="relative max-w-7xl mx-auto">
+<div class="relative py-8">
+  <div class="relative">
     <div class="text-center">
       <h2 class="text-3xl leading-9 tracking-tight font-extrabold text-gray-900 sm:text-4xl sm:leading-10">
         From the blog
@@ -12,7 +12,7 @@ title: Blog
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque, ducimus sed.
       </p>
     </div>
-    <div class="mt-12 grid gap-5 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none">
+    <div class="mt-12 w-full grid gap-5 lg:grid-cols-2">
       {% for post in site.posts %}
         {% assign author = site.authors | first %}
 
