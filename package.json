@@ -1,11 +1,14 @@
 {
-  "name": "jekyll-starter-tailwind",
-  "version": "6.0.0",
-  "description": "A starter kit for using Tailwind with Jekyll",
+  "name": "three-month-startup",
+  "private": "true",
+  "version": "1.0.0",
+  "description": "A blog tracking our journey on the three month startup",
   "main": "gulpfile.babel.js",
   "devDependencies": {
     "@babel/core": "^7.11.1",
     "@babel/preset-env": "^7.11.0",
+    "@tailwindcss/ui": "^0.5.0",
+    "alpinejs": "^2.6.0",
     "autoprefixer": "9.8.6",
     "babel-loader": "^8.1.0",
     "babel-preset-env": "1.7.0",
@@ -30,18 +33,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/taylorbryant/jekyll-starter-tailwind.git"
+    "url": "https://github.com/maxmetcalf12/three_month_startup"
   },
-  "author": "Taylor Bryant",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/taylorbryant/jekyll-starter-tailwind/issues"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "dependencies": {
-    "@tailwindcss/ui": "^0.5.0",
-    "alpinejs": "^2.6.0"
-  }
+  "author": "Max Metcalf",
+  "dependencies": {}
 }
