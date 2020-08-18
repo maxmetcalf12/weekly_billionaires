@@ -50,9 +50,6 @@ collections:
         name: "navigation"
         file: "_data/nav.yml"
         fields:
-          - label: "Navigation Items"
-            name: "items"
-            widget: "list"
-            fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Link, name: link, widget: string}
+          - label: "Homepage Text"
+            name: "intro_text"
+            widget: "markdown"
