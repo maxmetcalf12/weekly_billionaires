@@ -1,5 +1,18 @@
 title: Three Month Startup
+tagline: Blog tracking our startup adventure
 description: Blog tracking Rob and Max Metcalf's attempt at starting a side hustle that makes $30,000 in three months.
+url: https://www.threemonthstartup.com
+logo: /assets/images/maxmoji_thumbsup.png
+
+twitter:
+  username: maxmetcalf12
+  card: summary
+
+social:
+  name: Max Metcalf
+  links:
+    - https://twitter.com/maxmetcalf12
+
 permalink: pretty
 
 plugins:
