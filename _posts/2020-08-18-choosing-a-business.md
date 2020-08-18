@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Choosing a business
-date: 2020-08-19T06:18:29.072Z
+date: 2020-08-18T08:13:21.998Z
 author: max
 excerpt: This is a great article about many important things.
 ---
