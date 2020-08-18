@@ -70,5 +70,44 @@
 
 <div class="my-8">
   <h2 class="text-2xl md:text-3xl text-center py-4">Recent articles</h2>
+  <div class="mt-12 w-full grid gap-5 lg:grid-cols-2">
+    {% for post in site.posts %}
+    {% assign author = site.authors | first %}
 
+    <a href="{{ post.url }}" class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+      <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+        <div class="flex-1">
+          <div class="block">
+            <h3 class="mt-2 text-xl leading-7 font-semibold text-gray-900">
+              {{ post.title }}
+            </h3>
+            <p class="mt-3 text-base leading-6 text-gray-500">
+              {{ post.excerpt }}
+            </p>
+          </div>
+        </div>
+        <div class="mt-6 flex items-center">
+          <div class="flex-shrink-0">
+            <div>
+              <img class="h-12 w-12" src="{{ author.image }}" alt="">
+            </div>
+          </div>
+          <div class="ml-3">
+            <p class="text-sm leading-5 font-medium text-gray-900">
+              <div class="hover:underline">
+                {{ author.name }}
+              </div>
+            </p>
+            <div class="flex text-sm leading-5 text-gray-500">
+              <time datetime="2020-03-16">
+                {{ post.date | date_to_string }}
+              </time>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+    {% endfor %}
+
+  </div>
 </div>
