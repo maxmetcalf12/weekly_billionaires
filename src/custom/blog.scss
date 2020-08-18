@@ -9,3 +9,11 @@
 .blogContent a {
   @apply underline text-blue-900;
 }
+
+.blogContent p {
+  @apply my-2;
+}
+
+.blogContent h2 {
+  @apply text-2xl font-bold mt-6;
+}
