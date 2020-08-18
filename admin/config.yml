@@ -25,7 +25,7 @@ collections:
           searchFields: [display_name],
           valueField: 'name',
         }
-      - { label: 'Excerpt', name: 'excerpt', widget: 'string' }
+      - { label: 'Excerpt', name: 'excerpt', widget: 'text' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'authors'
     label: 'Authors'
