@@ -24,7 +24,6 @@ const jekyll = process.platform === "win32" ? "jekyll.bat" : "jekyll";
 const isDevelopmentBuild = process.env.NODE_ENV === "development";
 
 task("buildJekyll", () => {
-  console.log("Development enviroment", isDevelopmentBuild);
   browserSync.notify("Building Jekyll site...");
 
   const args = ["exec", jekyll, "build"];
@@ -34,7 +33,7 @@ task("buildJekyll", () => {
   } else {
     args.push("JEKYLL_ENV=production");
   }
-
+  console.log(args);
   return spawn("bundle", args, {
     stdio: "inherit"
   });
