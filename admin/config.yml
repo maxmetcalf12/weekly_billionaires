@@ -48,8 +48,7 @@ collections:
     files:
       - label: "Homepage"
         name: "homepage"
-        file: "_data/homepage.yml"
+        file: "_data/homepage.md"
         fields:
-          - label: "Intro Text"
-            name: "intro_text"
-            widget: "markdown"
+          - { label: 'Name', name: 'name', widget: 'string' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
