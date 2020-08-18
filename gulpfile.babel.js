@@ -2,7 +2,13 @@ import autoprefixer from "autoprefixer";
 import browserSync from "browser-sync";
 import spawn from "cross-spawn";
 import cssnano from "cssnano";
-import { dest, series, src, task, watch } from "gulp";
+import {
+  dest,
+  series,
+  src,
+  task,
+  watch
+} from "gulp";
 import postcss from "gulp-postcss";
 import atimport from "postcss-import";
 import tailwindcss from "tailwindcss";
@@ -24,9 +30,13 @@ task("buildJekyll", () => {
 
   if (isDevelopmentBuild) {
     args.push("--incremental");
+  } else {
+    args.push("JEKYLL_ENV=production");
   }
 
-  return spawn("bundle", args, { stdio: "inherit" });
+  return spawn("bundle", args, {
+    stdio: "inherit"
+  });
 });
 
 task("processStyles", () => {
@@ -65,8 +75,9 @@ task("startServer", () => {
       "**/*.markdown",
       "!_site/**/*",
       "!node_modules/**/*",
-    ],
-    { interval: 500 },
+    ], {
+      interval: 500
+    },
     buildSite
   );
 });
