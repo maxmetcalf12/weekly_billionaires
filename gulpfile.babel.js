@@ -27,15 +27,17 @@ task("buildJekyll", () => {
   browserSync.notify("Building Jekyll site...");
 
   const args = ["exec", jekyll, "build"];
+  let productionEnv = process.env;
 
   if (isDevelopmentBuild) {
     args.push("--incremental");
   } else {
-    args.splice(2, 0, "JEKYLL_ENV=production");
+    productionEnv.JEKYLL_ENV = 'production';
   }
-  console.log(args);
+
   return spawn("bundle", args, {
-    stdio: "inherit"
+    stdio: "inherit",
+    env: productionEnv
   });
 });
 
