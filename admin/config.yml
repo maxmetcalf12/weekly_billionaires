@@ -41,3 +41,18 @@ collections:
       - { label: 'Profile Picture', name: 'image', widget: 'image' }
       - { label: 'Short Intro', name: 'short_intro', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: "config"
+    label: "Config"
+    editor:
+      preview: false
+    files:
+      - label: "Navigation"
+        name: "navigation"
+        file: "_data/nav.yml"
+        fields:
+          - label: "Navigation Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Link, name: link, widget: string}
