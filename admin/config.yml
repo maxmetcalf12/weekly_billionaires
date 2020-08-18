@@ -46,10 +46,10 @@ collections:
     editor:
       preview: false
     files:
-      - label: "Navigation"
-        name: "navigation"
-        file: "_data/nav.yml"
+      - label: "Homepage"
+        name: "homepage"
+        file: "_data/homepage.yml"
         fields:
-          - label: "Homepage Text"
+          - label: "Intro Text"
             name: "intro_text"
             widget: "markdown"
