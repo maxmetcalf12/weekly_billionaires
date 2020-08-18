@@ -8,6 +8,9 @@ module.exports = {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
         mono: ['Anonymous Pro', ...defaultTheme.fontFamily.mono],
       },
+      opacity: {
+        '90': '.9',
+      },
     },
   },
   variants: {},

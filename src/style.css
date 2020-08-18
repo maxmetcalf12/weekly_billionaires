@@ -2,4 +2,11 @@
 @tailwind base;
 @tailwind components;
 /* purgecss end ignore */
+
+.progressBar {
+  bottom: 0;
+  width: 100%;
+  height: calc(100% * 14672 / 30000);
+}
+
 @tailwind utilities;
