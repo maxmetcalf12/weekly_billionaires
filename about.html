@@ -1,8 +1,9 @@
 ---
 ---
+<!-- TODO: link to about us pages and show more info -->
 <div class="p-4 space-y-4">
   {% for author in site.authors %}
-  <a class="flex bg-white p-8 rounded-lg shadow-lg space-x-4" href="{{ author.url }}">
+  <div class="flex bg-white p-8 rounded-lg shadow-lg space-x-4">
     <div class="w-24 h-24">
       <img src="{{ author.image }}" alt="">
     </div>
@@ -13,6 +14,6 @@
         {{ author.short_intro }}
       </div>
     </div>
-  </a>
+  </div>
   {% endfor %}
 </div>

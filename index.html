@@ -1,6 +1,9 @@
 ---
 ---
-<h1 class="text-2xl md:text-4xl text-center py-8">💰 Three Month Startup 💰</h1>
+
+{% assign first_post = site.posts | first %}
+
+<h1 class="text-2xl md:text-4xl text-center py-8 font-bold">💰 Three Month Startup 💰</h1>
 
 <div class="px-4 flex items-start space-x-4 md:space-x-12">
   <div class="flex-grow">
@@ -10,20 +13,19 @@
     </div>
     <div class="flex space-x-1 text-lg md:text-2xl">
       <h2 class="font-semibold">Actual:</h2>
-      <p>$14,672</p>
+      <p>$0</p>
     </div>
     <div class="flex space-x-1 text-lg md:text-2xl">
       <h2 class="font-semibold">Start date:</h2>
       <p>August 12, 2020</p>
     </div>
-    <div class="space-y-2 pr-4 md:pr-0">
-      <h2 class="text-lg md:text-2xl font-semibold">What is this?</h2>
-      <p class="text-sm">My name is Max Metcalf. My favorite podcast is <a class="underline text-blue-900" href="https://thehustle.co/my-first-million-podcast/">My First Million</a>
-        by Sam Parr and Shaan Puri. On a recent episode, they posed the question "if you had to start a business
-        with the goal of making $3mm in 3 months, what would it be?" I thought this was overly ambitious, but a fun idea
-        nonetheless, so I called my brother Rob and asked him if he would be down with a little bit smaller of a goal, $30k in 3 months.</p>
-      <p class="text-sm">This website is a blog tracking our progress. We release a daily blog article with our progress and take-aways.
+    <div class="space-y-2 mt-2">
+      <p class="text-sm md:text-base">Inspired by Shaan and Sam on <a class="underline text-blue-900" href="https://thehustle.co/my-first-million-podcast/">My First Million</a>,
+        my brother Rob and I are starting a company with the vision of making as much money as possible in three months.
+        The original challenge was $3mm in 3 months, but we are knocking that down 100 fold and shooting for $30,000.</p>
+      <p class="text-sm md:text-base">This website is a blog tracking our progress. We release a daily blog article with our progress and take-aways.
         We are also working on a podcast to share our daily grind.</p>
+      <p class="text-sm md:text-base">For more information on our challenge, checkout this <a class="underline text-blue-900" href="{{ first_post.url }}">blog post</a>.</p>
     </div>
   </div>
   <div class="relative w-24 md:w-32 flex-none flex flex-col-reverse border-2 border-gray-500">
@@ -61,17 +63,17 @@
       <div class="relative w-full h-full">
         <div class="absolute progressBar bg-green-900 opacity-90"></div>
         <div class="absolute flex justify-center pt-1 progressBar">
-          <p class="text-lg md:text-xl text-gray-100">$14,672</p>
+          <p class="text-lg md:text-xl text-gray-100">$0</p>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="my-8">
-  <h2 class="text-2xl md:text-3xl text-center py-4">Recent articles</h2>
-  <div class="mt-12 w-full grid gap-5 lg:grid-cols-2">
-    {% for post in site.posts %}
+<div class="px-4 mb-8 mt-24">
+  <h2 class="text-2xl md:text-3xl font-semibold text-center">Recent articles</h2>
+  <div class="mt-4 w-full grid gap-5 lg:grid-cols-2">
+    {% for post in site.posts limit:4 %}
     {% assign author = site.authors | first %}
 
     <a href="{{ post.url }}" class="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
@@ -109,5 +111,8 @@
     </a>
     {% endfor %}
 
+  </div>
+  <div class="text-center mt-8">
+    <a class="text-lg font-semibold underline" href="/blog/">View all articles</a>
   </div>
 </div>

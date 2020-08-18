@@ -6,7 +6,7 @@
 .progressBar {
   bottom: 0;
   width: 100%;
-  height: calc(100% * 14672 / 30000);
+  height: calc(100% * 2500 / 30000);
 }
 
 .blogContent {
@@ -18,7 +18,7 @@
 }
 
 .blogContent a {
-  @apply font-medium text-blue-900;
+  @apply underline text-blue-900;
 }
 
 @tailwind utilities;
