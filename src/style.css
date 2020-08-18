@@ -9,4 +9,16 @@
   height: calc(100% * 14672 / 30000);
 }
 
+.blogContent {
+  @apply font-sans;
+}
+
+.blogContent ol {
+  @apply list-decimal ml-8;
+}
+
+.blogContent a {
+  @apply font-medium text-blue-900;
+}
+
 @tailwind utilities;

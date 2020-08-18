@@ -1,13 +1,23 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
-<p>
-  {{ page.date | date_to_string }}
-  {% assign author = site.authors | where: 'short_name', page.author | first %}
-  {% if author %}
-    - <a href="{{ author.url }}">{{ author.name }}</a>
-  {% endif %}
-</p>
+{% assign author = site.authors | where: 'short_name', page.author | first %}
 
-{{ content }}
+<div class="p-4">
+  <h1 class="text-2xl font-semibold">{{ page.title }}</h1>
+  <div class="flex space-x-2">
+    <div>
+      <img class="h-12 w-12" src="{{ author.image }}" alt="">
+    </div>
+    <div class="flex flex-col">
+      {% if author %}
+      <a href="{{ author.url }}">{{ author.name }}</a>
+      {% endif %}
+      <p class="text-sm text-gray-600">{{ page.date | date_to_string }}</p>
+    </div>
+  </div>
+
+  <div class="space-y-2 pt-4 border-t-2 border-gray-300 mt-4 blogContent">
+    {{ content }}
+  </div>
+</div>
