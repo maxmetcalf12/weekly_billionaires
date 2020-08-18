@@ -1,7 +1,8 @@
 ---
 short_name: max
 name: Max Metcalf
-position: Chief Editor
+position: Technology Master
 image: /assets/images/maxmoji_thumbsup.png
+short_intro: Max is a software engineer at a health tech company called Orca Health.
 ---
-Max is an avid fruit grower based in the south of France.
+Max is a software engineer at a health tech company called Orca Health.

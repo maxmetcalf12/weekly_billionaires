@@ -3,9 +3,11 @@ author: max
 title: Intro to Three Month Startup
 excerpt: Initial summary of what we're doing, why we're doing it, and our goals.
 ---
-About a month ago, I was listening to an episode of my favorite podcast, [My First Million](https://thehustle.co/my-first-million-podcast/). They went on a bit of a tangent talking about an idea of how to make money as fast as possible. The criteria they set on the podcast was "if you had three months to make $3mm, what would you build?" One of the reasons I love the podcast is it forces me to see the world — and especially money — from a different, much bigger perspective. I thought to myself "if they're talking about making $3mm in three months, what is stopping me from starting a business to make some money, even if it is an order of magnitude less than $3mm?"
+About a month ago, I was listening to an episode of my favorite podcast, [My First Million](https://thehustle.co/my-first-million-podcast/). They went on a bit of a tangent talking about an idea of how to make money as fast as possible. **The question they posed on the podcast was "if you had three months to make $3mm, what would you build?"**
 
-So, I called my brother Rob. A little background, my brother is a UX designer and we have worked on a bunch of projects together at work (he freelances for my employer, Orca Health). He loved the idea, so we decided to talk about what a realistic goal for us was. Before setting a goal, we decided to set some criteria of what the business would be. Here are those criteria:
+One of the reasons I love podcasts (specifically My First Million) is it forces me to see the world of business from a different, much larger perspective. I thought to myself "if they're talking about making $3mm in three months, what is stopping me from starting a business to make some money, even if it is an order of magnitude less than $3mm?"
+
+So, I called my brother [Rob](/authors/rob/). A little background, my brother is a UX designer and we have worked on a bunch of projects together at work (he freelances for my employer, Orca Health). He loved the idea, so we decided to talk about what a realistic goal for us was. Before setting a goal, we decided to set some criteria of what the business would be. Here are those criteria:
 
 1. Must be strictly a side hustle, cannot take away hours from our current employer
 2. Max money to start of $300

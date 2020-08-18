@@ -1,0 +1,18 @@
+---
+---
+<div class="p-4 space-y-4">
+  {% for author in site.authors %}
+  <a class="flex bg-white p-8 rounded-lg shadow-lg space-x-4" href="{{ author.url }}">
+    <div class="w-24 h-24">
+      <img src="{{ author.image }}" alt="">
+    </div>
+    <div class="">
+      <h2 class="text-xl semibold">{{ author.name }}</h2>
+      <h3 class="text-xs text-gray-500 mb-2">{{ author.position }}</h3>
+      <div class="text-sm space-y-2">
+        {{ author.short_intro }}
+      </div>
+    </div>
+  </a>
+  {% endfor %}
+</div>
