@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{% assign author = site.authors | where: 'short_name', page.author | first %}
+{% assign author = site.authors | where: 'name', page.author | first %}
 
 <div class="p-4">
   <h1 class="text-2xl font-semibold">{{ page.title }}</h1>
@@ -11,7 +11,7 @@ layout: default
     </div>
     <div class="flex flex-col">
       {% if author %}
-      <a href="{{ author.url }}">{{ author.name }}</a>
+      <a href="{{ author.url }}">{{ author.display_name }}</a>
       {% endif %}
       <p class="text-sm text-gray-600">{{ page.date | date_to_string }}</p>
     </div>
