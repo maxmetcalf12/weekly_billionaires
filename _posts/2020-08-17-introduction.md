@@ -20,3 +20,5 @@ After setting these criteria, we came up with our goal: **3 months, $30,000.**
 I realize this goal is very small compared to Sam and Shaan's discussion of $3mm, but $30k is enough money to have a material difference in each of our lives. If we can hit this goal, we'd be stoked. If we exceed it, that would be even better. If we fail, we fail.
 
 We have also set the goal of documenting every step of the journey. We are planning on doing that through this blog, a podcast, and complete transparency to everything we do (within reason). I love transparency in business (Buffer), so we plan on sharing everything we do with everyone. If you're reading this far, thank you. Hopefully we can provide entertaining, informative content over the next three months!
+
+Stay tuned!
