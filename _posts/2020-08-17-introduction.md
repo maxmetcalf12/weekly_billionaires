@@ -2,6 +2,7 @@
 author: max
 title: Intro to Three Month Startup
 excerpt: Initial summary of what we're doing, why we're doing it, and our goals.
+date: 2020-08-18T05:57:27.060Z
 ---
 About a month ago, I was listening to an episode of my favorite podcast, [My First Million](https://thehustle.co/my-first-million-podcast/). They went on a bit of a tangent talking about an idea of how to make money as fast as possible. **The question they posed on the podcast was "if you had three months to make $3mm, what would you build?"**
 
