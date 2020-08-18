@@ -31,7 +31,7 @@ task("buildJekyll", () => {
   if (isDevelopmentBuild) {
     args.push("--incremental");
   } else {
-    args.push("JEKYLL_ENV=production");
+    args.splice(1, 0, "JEKYLL_ENV=production");
   }
   console.log(args);
   return spawn("bundle", args, {
