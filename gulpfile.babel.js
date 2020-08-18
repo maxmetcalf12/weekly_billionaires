@@ -10,12 +10,13 @@ import {
   watch
 } from "gulp";
 import postcss from "gulp-postcss";
+import sass from "gulp-sass";
 import atimport from "postcss-import";
 import tailwindcss from "tailwindcss";
 
 const SITE_ROOT = "./_site";
 const POST_BUILD_STYLESHEET = `${SITE_ROOT}/assets/css/`;
-const PRE_BUILD_STYLESHEET = "./src/style.css";
+const PRE_BUILD_STYLESHEET = "./src/style.scss";
 const TAILWIND_CONFIG = "./tailwind.config.js";
 
 // Fix for Windows compatibility
@@ -45,6 +46,7 @@ task("processStyles", () => {
   browserSync.notify("Compiling styles...");
 
   return src(PRE_BUILD_STYLESHEET)
+    .pipe(sass().on('error', sass.logError))
     .pipe(
       postcss([
         atimport(),

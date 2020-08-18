@@ -3,13 +3,7 @@
 @tailwind components;
 /* purgecss end ignore */
 
-.homeContent {
-  @apply text-base;
-}
-
-.homeContent a {
-  @apply underline text-blue-900;
-}
+@import "./homepage";
 
 .progressBar {
   bottom: 0;
