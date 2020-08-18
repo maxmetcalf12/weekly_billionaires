@@ -50,5 +50,4 @@ collections:
         name: "homepage"
         file: "_data/homepage.md"
         fields:
-          - { label: 'Name', name: 'name', widget: 'string' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
