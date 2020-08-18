@@ -2,6 +2,7 @@
 author: max
 title: Intro to Three Month Startup
 excerpt: Initial summary of what we're doing, why we're doing it, and our goals.
+date: 2020-08-18T05:57:27.060Z
 ---
 About a month ago, I was listening to an episode of my favorite podcast, [My First Million](https://thehustle.co/my-first-million-podcast/). They went on a bit of a tangent talking about an idea of how to make money as fast as possible. **The question they posed on the podcast was "if you had three months to make $3mm, what would you build?"**
 
@@ -19,3 +20,5 @@ After setting these criteria, we came up with our goal: **3 months, $30,000.**
 I realize this goal is very small compared to Sam and Shaan's discussion of $3mm, but $30k is enough money to have a material difference in each of our lives. If we can hit this goal, we'd be stoked. If we exceed it, that would be even better. If we fail, we fail.
 
 We have also set the goal of documenting every step of the journey. We are planning on doing that through this blog, a podcast, and complete transparency to everything we do (within reason). I love transparency in business (Buffer), so we plan on sharing everything we do with everyone. If you're reading this far, thank you. Hopefully we can provide entertaining, informative content over the next three months!
+
+Stay tuned!
