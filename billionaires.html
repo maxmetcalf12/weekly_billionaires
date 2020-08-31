@@ -11,66 +11,104 @@
 <div class="flex flex-col px-4 max-w-6xl mx-auto">
   <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
     <div class="shadow overflow-auto border-b border-gray-200 sm:rounded-lg">
-      <table class="min-w-full divide-y divide-gray-200">
+      <table x-data="getData()" class="min-w-full divide-y divide-gray-200">
         <thead>
-          <tr class="bg-green-800">
-            <th class="px-6 py-3 text-left text-xs leading-4 font-medium text-white uppercase tracking-wider whitespace-no-wrap">
-              Name
+          <tr class="bg-gray-200">
+            <th @click="billionaires.sort(compareValues('published_date', sort_order))" class="cursor-pointer px-6 py-3 text-left text-xs leading-4 font-medium uppercase tracking-wider whitespace-no-wrap">
+              Date Published <i class="fas fa-sort"></i>
             </th>
-            <th class="px-6 py-3 text-left text-xs leading-4 font-medium text-white uppercase tracking-wider whitespace-no-wrap">
-              Net Worth
+            <th @click="billionaires.sort(compareValues('display_name', sort_order))" class="cursor-pointer px-6 py-3 text-left text-xs leading-4 font-medium uppercase tracking-wider whitespace-no-wrap">
+              Name <i class="fas fa-sort"></i>
             </th>
-            <th class="px-6 py-3 text-left text-xs leading-4 font-medium text-white uppercase tracking-wider whitespace-no-wrap">
-              Age
+            <th @click="billionaires.sort(compareValues('net_worth', sort_order))" class="cursor-pointer px-6 py-3 text-left text-xs leading-4 font-medium uppercase tracking-wider whitespace-no-wrap">
+              Net Worth <i class="fas fa-sort"></i>
             </th>
-            <th class="px-6 py-3 text-left text-xs leading-4 font-medium text-white uppercase tracking-wider whitespace-no-wrap">
-              Country
+            <th @click="billionaires.sort(compareValues('age', sort_order))" class="cursor-pointer px-6 py-3 text-left text-xs leading-4 font-medium uppercase tracking-wider whitespace-no-wrap">
+              Age <i class="fas fa-sort"></i>
             </th>
-            <th class="px-6 py-3 text-left text-xs leading-4 font-medium text-white uppercase tracking-wider whitespace-no-wrap">
-              Company
+            <th @click="billionaires.sort(compareValues('country', sort_order))" class="cursor-pointer px-6 py-3 text-left text-xs leading-4 font-medium uppercase tracking-wider whitespace-no-wrap">
+              Country <i class="fas fa-sort"></i>
             </th>
-            <th class="px-6 py-3 text-left text-xs leading-4 font-medium text-white uppercase tracking-wider whitespace-no-wrap">
-              Industry
+            <th @click="billionaires.sort(compareValues('company', sort_order))" class="cursor-pointer px-6 py-3 text-left text-xs leading-4 font-medium uppercase tracking-wider whitespace-no-wrap">
+              Company <i class="fas fa-sort"></i>
+            </th>
+            <th @click="billionaires.sort(compareValues('industry', sort_order))" class="cursor-pointer px-6 py-3 text-left text-xs leading-4 font-medium uppercase tracking-wider whitespace-no-wrap">
+              Industry <i class="fas fa-sort"></i>
             </th>
           </tr>
         </thead>
         <tbody class="bg-white divide-y divide-gray-200">
-          {% for billionaire in site.billionaires %}
-          <tr class="hover:bg-gray-50 cursor-pointer">
-            <td class="px-6 py-4 whitespace-no-wrap">
-              <div class="flex items-center">
-                <div class="flex-shrink-0 h-10 w-10">
-                  <img class="h-10 w-10 rounded-full" src="{{ billionaire.image }}" alt="">
-                </div>
-                <div class="ml-4">
-                  <div class="text-sm leading-5 font-medium text-gray-900">
-                    {{ billionaire.display_name}}
+          <template x-for="billionaire in billionaires" :key="billionaire.name">
+            <tr @click="visitURL(billionaire.url)" class="hover:bg-gray-50 cursor-pointer">
+              <td x-text="prettyDate(billionaire.published_date)" class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500"></td>
+              <td class="px-6 py-4 whitespace-no-wrap">
+                <div class="flex items-center">
+                  <div class="flex-shrink-0 h-10 w-10">
+                    <img class="h-10 w-10 rounded-full" x-bind:src="billionaire.image" alt="">
+                  </div>
+                  <div class="ml-4">
+                    <div class="text-sm leading-5 font-medium text-gray-900" x-text="billionaire.display_name"></div>
                   </div>
                 </div>
-              </div>
-            </td>
-            <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
-              {{ billionaire.net_worth }}
-            </td>
-            <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
-              {{ billionaire.age }}
-            </td>
-            <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
-              {{ billionaire.country }}
-            </td>
-            <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
-              {{ billionaire.company }}
-            </td>
-            <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
-              <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-sm font-medium leading-5 bg-green-100 text-green-800">
-                {{ billionaire.industry }}
-              </span>
-            </td>
-            <td class="hidden">{{ billionaire.published_date }}</td>
-          </tr>
-          {% endfor %}
+              </td>
+              <td x-text="billionaire.net_worth" class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500"></td>
+              <td x-text="billionaire.age" class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500"></td>
+              <td x-text="billionaire.country" class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500"></td>
+              <td x-text="billionaire.company" class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500"></td>
+              <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                <span x-text="billionaire.industry" class="inline-flex items-center px-2.5 py-0.5 rounded-md text-sm font-medium leading-5 bg-green-100 text-green-800">
+                </span>
+              </td>
+            </tr>
+          </template>
         </tbody>
       </table>
     </div>
   </div>
 </div>
+
+<script type="text/javascript">
+  function getData() {
+    return {
+      billionaires: {{ site.billionaires | sort: 'published_date' | reverse | jsonify }},
+      sort_key: 'display_name',
+      sort_order: 'asc',
+      prettyDate: function(date) {
+        let options = { month: 'long', day: 'numeric', year: 'numeric' };
+        let js_date = new Date(date);
+        js_date = js_date.toLocaleString('default', options)
+        return js_date;
+      },
+      changeSortOrder: function(key) {
+        if (key != this.sort_key) {
+          this.sort_key = key;
+        }
+        this.sort_order = this.sort_order == 'desc' ? 'asc' : 'desc';
+      },
+      compareValues: function(key, order) {
+        this.changeSortOrder(key);
+
+        return function innerSort(a, b) {
+
+          if (!a.hasOwnProperty(key) || !b.hasOwnProperty(key)) {
+            return 0;
+          }
+
+          const varA = typeof a[key] === "string" ? a[key].toUpperCase() : a[key];
+          const varB = typeof b[key] === "string" ? b[key].toUpperCase() : b[key];
+
+          let comparison = 0;
+          if (varA > varB) {
+            comparison = 1;
+          } else if (varA < varB) {
+            comparison = -1;
+          }
+          return order === "desc" ? comparison * -1 : comparison;
+        };
+      },
+      visitURL: function(url) {
+        window.location.href = url;
+      }
+    };
+  }
+</script>

@@ -2,7 +2,7 @@
 name: jeff_bezos
 display_name: Jeff Bezos
 net_worth: $200 B
-age: 54
+age: 53
 country: United States
 company: Amazon
 industry: tech
