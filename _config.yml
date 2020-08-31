@@ -38,6 +38,7 @@ exclude:
 collections:
   billionaires:
     output: true
+    sort_by: published_date
 
 defaults:
   - scope:
