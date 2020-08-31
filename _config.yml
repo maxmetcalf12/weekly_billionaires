@@ -1,17 +1,17 @@
-title: Three Month Startup
-tagline: Blog tracking our startup adventure
-description: Blog tracking Rob and Max Metcalf's attempt at starting a side hustle that makes $30,000 in three months.
-url: https://www.threemonthstartup.com
+title: Weekly Billionaires
+tagline: Researching a new billionaire every week.
+description: Max Metcalf's research project of studying a new billionaire every week, documenting it, and publishing it to Twitter and as a newsletter.
+url: https://www.weeklybillionaires.com
 logo: /assets/images/maxmoji_thumbsup.png
 
 twitter:
-  username: maxmetcalf12
+  username: weeklybillions
   card: summary
 
 social:
-  name: Max Metcalf
+  name: Weekly Billionaires
   links:
-    - https://twitter.com/maxmetcalf12
+    - https://twitter.com/weeklybillions
 
 permalink: pretty
 

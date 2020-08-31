@@ -1,8 +1,8 @@
 {
-  "name": "three-month-startup",
+  "name": "weekly-billionaires",
   "private": "true",
   "version": "1.0.0",
-  "description": "A blog tracking our journey on the three month startup",
+  "description": "A blog researching a new billionaire each week.",
   "main": "gulpfile.babel.js",
   "devDependencies": {
     "@babel/core": "^7.11.1",
