@@ -14,9 +14,6 @@
       <table x-data="getData()" class="min-w-full divide-y divide-gray-200">
         <thead>
           <tr class="bg-gray-200">
-            <th @click="billionaires.sort(compareValues('published_date', sort_order))" class="cursor-pointer px-6 py-3 text-left text-xs leading-4 font-medium uppercase tracking-wider whitespace-no-wrap">
-              Date Published <i class="fas fa-sort"></i>
-            </th>
             <th @click="billionaires.sort(compareValues('display_name', sort_order))" class="cursor-pointer px-6 py-3 text-left text-xs leading-4 font-medium uppercase tracking-wider whitespace-no-wrap">
               Name <i class="fas fa-sort"></i>
             </th>
@@ -35,12 +32,14 @@
             <th @click="billionaires.sort(compareValues('industry', sort_order))" class="cursor-pointer px-6 py-3 text-left text-xs leading-4 font-medium uppercase tracking-wider whitespace-no-wrap">
               Industry <i class="fas fa-sort"></i>
             </th>
+            <th @click="billionaires.sort(compareValues('published_date', sort_order))" class="cursor-pointer px-6 py-3 text-left text-xs leading-4 font-medium uppercase tracking-wider whitespace-no-wrap">
+              Date Published <i class="fas fa-sort"></i>
+            </th>
           </tr>
         </thead>
         <tbody class="bg-white divide-y divide-gray-200">
           <template x-for="billionaire in billionaires" :key="billionaire.name">
             <tr @click="visitURL(billionaire.url)" class="hover:bg-gray-50 cursor-pointer">
-              <td x-text="prettyDate(billionaire.published_date)" class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500"></td>
               <td class="px-6 py-4 whitespace-no-wrap">
                 <div class="flex items-center">
                   <div class="flex-shrink-0 h-10 w-10">
@@ -59,6 +58,7 @@
                 <span x-text="billionaire.industry" class="inline-flex items-center px-2.5 py-0.5 rounded-md text-sm font-medium leading-5 bg-green-100 text-green-800">
                 </span>
               </td>
+              <td x-text="prettyDate(billionaire.published_date)" class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500"></td>
             </tr>
           </template>
         </tbody>
