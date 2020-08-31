@@ -1,25 +1,10 @@
 ---
 ---
-<!-- TODO: link to about us pages and show more info -->
 
 <div class="py-8 px-4 space-y-4">
   <div class="text-center">
     <h2 class="text-3xl leading-9 tracking-tight font-bold text-gray-900 sm:text-4xl sm:leading-10">
-      🧐 About Us 🧐
+      🤷 About Us 🤷
     </h2>
   </div>
-  {% for author in site.authors %}
-  <div class="flex bg-white p-8 rounded-lg shadow-lg space-x-4">
-    <div class="w-24 h-24">
-      <img src="{{ author.image }}" alt="">
-    </div>
-    <div class="">
-      <h2 class="text-xl semibold">{{ author.display_name }}</h2>
-      <h3 class="text-xs text-gray-500 mb-2">{{ author.position }}</h3>
-      <div class="text-sm space-y-2">
-        {{ author.short_intro }}
-      </div>
-    </div>
-  </div>
-  {% endfor %}
 </div>

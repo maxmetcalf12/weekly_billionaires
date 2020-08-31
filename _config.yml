@@ -36,17 +36,10 @@ exclude:
   - webpack
 
 collections:
-  authors:
-    output: true
   billionaires:
     output: true
 
 defaults:
-  - scope:
-      path: ""
-      type: "authors"
-    values:
-      layout: "author"
   - scope:
       path: ""
       type: "billionaires"
@@ -54,14 +47,5 @@ defaults:
       layout: "billionaire"
   - scope:
       path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  - scope:
-      path: ""
     values:
       layout: "default"
-  - scope:
-      path: "admin"
-    values:
-      sitemap: false
