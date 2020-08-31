@@ -19,6 +19,7 @@
     "cssnano": "4.1.10",
     "gulp": "4.0.2",
     "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.1.0",
     "postcss-import": "12.0.1",
     "tailwindcss": "^1.6.2",
     "webpack": "^4.44.1",
@@ -36,7 +37,5 @@
     "url": "https://github.com/maxmetcalf12/three_month_startup"
   },
   "author": "Max Metcalf",
-  "dependencies": {
-    "gulp-sass": "^4.1.0"
-  }
+  "dependencies": {}
 }
