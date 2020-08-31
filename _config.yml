@@ -38,6 +38,8 @@ exclude:
 collections:
   authors:
     output: true
+  billionaires:
+    output: true
 
 defaults:
   - scope:
@@ -45,6 +47,11 @@ defaults:
       type: "authors"
     values:
       layout: "author"
+  - scope:
+      path: ""
+      type: "billionaires"
+    values:
+      layout: "billionaire"
   - scope:
       path: ""
       type: "posts"

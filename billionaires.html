@@ -1,0 +1,67 @@
+---
+---
+<div class="flex flex-col">
+  <div class="">
+    <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+      <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
+        <table class="min-w-full divide-y divide-gray-200">
+          <thead>
+            <tr class="bg-gray-800">
+              <th class="px-6 py-3 text-left text-xs leading-4 font-medium text-white uppercase tracking-wider whitespace-no-wrap">
+                Name
+              </th>
+              <th class="px-6 py-3 text-left text-xs leading-4 font-medium text-white uppercase tracking-wider whitespace-no-wrap">
+                Net Worth
+              </th>
+              <th class="px-6 py-3 text-left text-xs leading-4 font-medium text-white uppercase tracking-wider whitespace-no-wrap">
+                Age
+              </th>
+              <th class="px-6 py-3 text-left text-xs leading-4 font-medium text-white uppercase tracking-wider whitespace-no-wrap">
+                Country
+              </th>
+              <th class="px-6 py-3 text-left text-xs leading-4 font-medium text-white uppercase tracking-wider whitespace-no-wrap">
+                Company
+              </th>
+              <th class="px-6 py-3 text-left text-xs leading-4 font-medium text-white uppercase tracking-wider whitespace-no-wrap">
+                Industry
+              </th>
+            </tr>
+          </thead>
+          <tbody class="bg-white divide-y divide-gray-200">
+            {% for billionaire in site.billionaires %}
+            <tr class="hover:bg-gray-50 cursor-pointer">
+              <td class="px-6 py-4 whitespace-no-wrap">
+                <div class="flex items-center">
+                  <div class="flex-shrink-0 h-10 w-10">
+                    <img class="h-10 w-10 rounded-full" src="{{ billionaire.image }}" alt="">
+                  </div>
+                  <div class="ml-4">
+                    <div class="text-sm leading-5 font-medium text-gray-900">
+                      {{ billionaire.display_name}}
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                {{ billionaire.net_worth }}
+              </td>
+              <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                {{ billionaire.age }}
+              </td>
+              <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                {{ billionaire.country }}
+              </td>
+              <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                {{ billionaire.company }}
+              </td>
+              <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                {{ billionaire.industry }}
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
