@@ -1,5 +1,6 @@
 ---
 name: Ryan Smith
+title: Ryan Smith Billionaire Profile
 net_worth: $1.3 B
 country: United States
 company: Qualtrics

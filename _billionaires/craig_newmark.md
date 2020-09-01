@@ -1,5 +1,6 @@
 ---
 name: Craig Newmark
+title: Craig Newmark Billionaire Profile
 net_worth: $1.0 B
 country: United States
 company: Craigslist
