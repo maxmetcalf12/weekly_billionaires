@@ -7,5 +7,5 @@ country: United States
 company: Qualtrics
 industry: tech
 image: /assets/images/billionaires/ryan_smith.jpg
-published_date: 2020-08-24
+published_date: 2020-08-17
 ---
