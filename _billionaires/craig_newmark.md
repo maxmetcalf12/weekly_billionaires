@@ -29,7 +29,7 @@ Craig is a self-proclaimed nerd. In fact, I sent out a tweet and he replied with
 
 I love nerds, I'm a math major myself and nothing is better than an upper level math class with a bunch of nerds. I wish I was more nerdy. Being a nerd helped Chris learn about computers in their very early days and get exposed to early virtual communities that later served as inspiration for Craigslist.
 
-## Craig did not seek wealth
+## Craig does not seek wealth
 
 From the early days of Craigslist, Craig has been adamant that his goal was not to make vast amounts of money. He obviously did very well for himself — he is on this billionaire list — but his goal was not to make money. He was happy providing a comfortable life for himself. I love the quote mentioned in the tweet above
 
