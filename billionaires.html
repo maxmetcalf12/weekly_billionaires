@@ -70,7 +70,7 @@
 <script type="text/javascript">
   function getData() {
     return {
-      billionaires: {{ site.billionaires | sort: 'published_date' | reverse | jsonify }},
+      billionaires: {{ site.data.billionaires | jsonify }},
       sort_key: 'display_name',
       sort_order: 'asc',
       prettyDate: function(date) {
