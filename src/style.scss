@@ -3,4 +3,6 @@
 @tailwind components;
 /* purgecss end ignore */
 
+@import "./custom/article_content.scss";
+
 @tailwind utilities;

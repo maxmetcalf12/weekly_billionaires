@@ -1,0 +1,25 @@
+.articleContent {
+  h2 {
+    @apply text-2xl font-bold;
+  }
+
+  img {
+    @apply max-w-lg mx-auto;
+  }
+
+  em {
+    @apply block text-sm text-center;
+  }
+
+  a {
+    @apply underline text-blue-600;
+  }
+
+  blockquote {
+    @apply border-l-4 border-gray-300 pl-4 font-medium;
+  }
+
+  .twitter-tweet {
+    @apply mx-auto;
+  }
+}
