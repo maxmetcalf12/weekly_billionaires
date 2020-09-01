@@ -26,7 +26,7 @@ image: assets/maxmoji_thumbsup.png
 {% include call_to_action.html %}
 
 <div class="px-4 my-8">
-  {% assign billionaire = site.billionaires | last %}
+  {% assign billionaire = site.data.billionaires | last %}
   <h2 class="text-2xl md:text-3xl font-semibold text-center">
     This week's billionaire:
     <a class="underline" href="{{ billionaire.url }}">{{ billionaire.display_name }}</a>
