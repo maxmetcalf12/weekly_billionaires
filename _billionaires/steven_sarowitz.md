@@ -1,7 +1,7 @@
 ---
 name: steven_sarowitz
 display_name: Steve Sarowitz
-net_worth: $1.2 B
+net_worth: $2.2 B
 age: 54
 country: United States
 company: Paylocity
