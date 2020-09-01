@@ -7,5 +7,5 @@ country: United States
 company: Craigslist
 industry: tech
 image: /assets/images/billionaires/craig_newmark.jpg
-published_date: 2020-08-17
+published_date: 2020-08-10
 ---

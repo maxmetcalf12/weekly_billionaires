@@ -74,7 +74,7 @@
       sort_key: 'display_name',
       sort_order: 'asc',
       prettyDate: function(date) {
-        let options = { month: 'long', day: 'numeric', year: 'numeric' };
+        let options = { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' };
         let js_date = new Date(date);
         js_date = js_date.toLocaleString('default', options)
         return js_date;
