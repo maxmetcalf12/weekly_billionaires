@@ -1,6 +1,22 @@
 ---
 layout: default
 ---
-<div class="max-w-3xl mx-auto space-y-4 p-4 articleContent">
-  {{ content }}
+<div class="max-w-3xl mx-auto p-4">
+  <div class="grid grid-cols-3 col-gap-4 md:col-gap-8">
+    <div class="">
+      <img class="w-full rounded-full" src="{{ page.image }}" alt="">
+    </div>
+    <div class="flex flex-col justify-center col-span-2">
+      <h1 class="text-2xl md:text-4xl font-bold">{{ page.display_name }}</h1>
+      <p class="text-sm md:text-base">Net worth: {{ page.net_worth }}</p>
+      <p class="text-sm md:text-base">Company: {{ page.company }}</p>
+      <p class="text-sm md:text-base">Country: {{ page.country }}</p>
+    </div>
+  </div>
+
+  <div class="w-full border-t-2 border-gray-200 my-8"></div>
+
+  <div class="space-y-4 max-w-full articleContent">
+    {{ content }}
+  </div>
 </div>

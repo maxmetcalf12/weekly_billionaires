@@ -4,7 +4,11 @@
   }
 
   img {
-    @apply max-w-lg mx-auto;
+    @apply max-w-full mx-auto;
+
+    @screen md {
+      @apply max-w-lg;
+    }
   }
 
   em {
