@@ -6,35 +6,5 @@
   company: Craigslist
   industry: tech
   image: /assets/images/billionaires/craig_newmark/profile.jpg
-  published_date: 2020-08-10
+  published_date: 2020-09-09
   url: /billionaires/craig_newmark
-- name: ryan_smith
-  display_name: Ryan Smith
-  net_worth: $1.3 B
-  age: 42
-  country: United States
-  company: Qualtrics
-  industry: tech
-  image: /assets/images/billionaires/ryan_smith.jpg
-  published_date: 2020-08-17
-  url: /billionaires/ryan_smith
-- name: frank_slootman
-  display_name: Frank Slootman
-  net_worth: $0.6 B
-  age: 61
-  country: United States
-  company: Snowflake
-  industry: tech
-  image: /assets/images/billionaires/frank_slootman.jpg
-  published_date: 2020-08-24
-  url: /billionaires/frank_slootman
-- name: steven_sarowitz
-  display_name: Steve Sarowitz
-  net_worth: $2.2 B
-  age: 54
-  country: United States
-  company: Paylocity
-  industry: tech
-  image: /assets/images/billionaires/steven_sarowitz.jpg
-  published_date: 2020-08-31
-  url: /billionaires/steven_sarowitz
